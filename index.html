@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strive — 前回重量を忘れない。</title>
+<meta name="description" content="Striveは、前回重量・回数・PR・インターバルを素早く記録できる筋トレ記録アプリです。App Storeで配信中。">
+<meta name="theme-color" content="#06060a">
+<link rel="canonical" href="https://strive-lp-xi.vercel.app/">
+<meta property="og:title" content="Strive — 前回重量を忘れない。">
+<meta property="og:description" content="前回重量、PR、インターバル、友達ランキング。ジム中のテンポを崩さず記録できる筋トレアプリ。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://strive-lp-xi.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6770878590">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -45,6 +54,7 @@ nav.solid{background:rgba(6,6,10,0.94);backdrop-filter:blur(20px);border-bottom-
   font-size:12px;font-weight:700;cursor:pointer;
   font-family:'Noto Sans JP',sans-serif;letter-spacing:0.08em;
   transition:all 0.2s;
+  text-decoration:none;
 }
 .nav-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}
 
@@ -103,6 +113,7 @@ nav.solid{background:rgba(6,6,10,0.94);backdrop-filter:blur(20px);border-bottom-
   font-family:'Noto Sans JP',sans-serif;
   letter-spacing:0.05em;transition:all 0.25s;
   display:inline-flex;align-items:center;gap:8px;
+  text-decoration:none;
 }
 .btn-red:hover{background:#f53c34;transform:translateY(-2px);box-shadow:0 12px 40px rgba(232,49,42,0.45)}
 .btn-outline{
@@ -344,7 +355,34 @@ nav.solid{background:rgba(6,6,10,0.94);backdrop-filter:blur(20px);border-bottom-
 .store-icon{font-size:30px}
 .store-text small{display:block;font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px}
 .store-text strong{display:block;font-size:17px;font-weight:700;letter-spacing:0.02em}
+
 .cta-note{margin-top:24px;font-size:12px;color:var(--muted2)}
+
+/* ── PLATFORM STATUS ── */
+.platform-status{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+  max-width:440px;
+  margin:0 0 26px;
+}
+.platform-card{
+  background:rgba(255,255,255,0.035);
+  border:1px solid rgba(255,255,255,0.09);
+  border-radius:14px;
+  padding:12px 14px;
+  backdrop-filter:blur(12px);
+}
+.platform-card.ready{border-color:rgba(232,49,42,0.28);background:rgba(232,49,42,0.07)}
+.platform-kicker{font-size:9px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;font-weight:700}
+.platform-main{font-size:13px;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.35}
+.platform-sub{font-size:11px;color:var(--muted);line-height:1.5;margin-top:4px}
+.store-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:0 auto}
+.store-link.primary{background:rgba(232,49,42,0.14);border-color:rgba(232,49,42,0.42);box-shadow:0 18px 60px rgba(232,49,42,0.16)}
+.store-link.primary:hover{background:rgba(232,49,42,0.22);border-color:rgba(232,49,42,0.65)}
+.store-link.secondary{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.1);opacity:.92}
+.store-link.secondary:hover{opacity:1}
+
 
 /* ── FOOTER ── */
 footer{
@@ -564,6 +602,13 @@ img{max-width:100%;height:auto}
     padding:18px 22px;
     border-radius:14px;
   }
+  .platform-status{
+    grid-template-columns:1fr;
+    max-width:none;
+    margin-bottom:22px;
+  }
+  .platform-card{padding:12px 13px;border-radius:14px}
+  .store-actions{grid-template-columns:1fr;gap:10px;max-width:none}
 
   footer{
     padding:34px 18px;
@@ -608,7 +653,7 @@ img{max-width:100%;height:auto}
     <a class="nav-link" href="#solution">機能</a>
     <a class="nav-link" href="#shots">スクショ</a>
     <a class="nav-link" href="#philosophy">コンセプト</a>
-    <button class="nav-btn" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">先行登録</button>
+    <a class="nav-btn" href="https://apps.apple.com/jp/app/strive/id6770878590" target="_blank" rel="noopener">App Store</a>
   </div>
 </nav>
 
@@ -619,19 +664,31 @@ img{max-width:100%;height:auto}
   <div class="hero-glow-center"></div>
   <div class="hero-inner">
     <div class="hero-text reveal">
-      <div class="hero-eyebrow"><span class="hero-dot"></span>Battle Workout Tracker — Coming Soon</div>
+      <div class="hero-eyebrow"><span class="hero-dot"></span>Now on App Store / Japan</div>
       <h1 class="hero-h1">
         前回重量を<br>
         <em>忘れない。</em>
       </h1>
       <p class="hero-sub">
-        友達と競い、<b>高め合える</b>筋トレ記録アプリ。<br>
-        記録するためではなく、<b>続けるため</b>に作られた。
+        前回記録・PR・インターバルを、<b>ジム中のテンポ</b>を崩さず確認。<br>
+        iOS版を<b>App Storeで配信開始</b>。Android版も準備中。
       </p>
+      <div class="platform-status" aria-label="対応プラットフォーム状況">
+        <div class="platform-card ready">
+          <div class="platform-kicker">iOS</div>
+          <div class="platform-main">App Storeで配信中</div>
+          <div class="platform-sub">今すぐダウンロードできます</div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-kicker">Android</div>
+          <div class="platform-main">準備中</div>
+          <div class="platform-sub">Google Play版も展開予定</div>
+        </div>
+      </div>
       <div class="hero-cta-row">
-        <button class="btn-red" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">
-          🔔 先行登録する
-        </button>
+        <a class="btn-red" href="https://apps.apple.com/jp/app/strive/id6770878590" target="_blank" rel="noopener">
+          App Storeでダウンロード
+        </a>
         <button class="btn-outline" onclick="document.getElementById('solution').scrollIntoView({behavior:'smooth'})">
           機能を見る
         </button>
@@ -785,23 +842,32 @@ img{max-width:100%;height:auto}
   <div class="cta-grid-bg"></div>
   <div class="cta-glow"></div>
   <div class="cta-inner reveal">
-    <div class="cta-eyebrow">Early Access — Google Play</div>
+    <div class="cta-eyebrow">Available Now — App Store</div>
     <h2 class="cta-h">
-      今すぐ、<br>
-      <em>始めよう。</em>
+      App Storeで、<br>
+      <em>配信開始。</em>
     </h2>
     <p class="cta-sub">
-      Google Playで先行登録受付中。<br>
-      リリース初日に<b>通知が届きます。</b>
+      前回重量・PR・インターバル・友達ランキングを、<br>
+      <b>ジムで使いやすい速さ</b>で記録できます。
     </p>
-    <a class="store-link" href="https://play.google.com/store" target="_blank">
-      <span class="store-icon">▶</span>
-      <div class="store-text">
-        <small>先行登録はこちら</small>
-        <strong>Google Play</strong>
-      </div>
-    </a>
-    <p class="cta-note">無料 · Android対応 · もうすぐリリース</p>
+    <div class="store-actions">
+      <a class="store-link primary" href="https://apps.apple.com/jp/app/strive/id6770878590" target="_blank" rel="noopener" aria-label="StriveをApp Storeでダウンロード">
+        <span class="store-icon"></span>
+        <div class="store-text">
+          <small>iOS</small>
+          <strong>App Storeでダウンロード</strong>
+        </div>
+      </a>
+      <a class="store-link secondary" href="#" aria-disabled="true" onclick="return false;">
+        <span class="store-icon">▶</span>
+        <div class="store-text">
+          <small>Android</small>
+          <strong>Google Play版は準備中</strong>
+        </div>
+      </a>
+    </div>
+    <p class="cta-note">iOS版配信中 · Android版準備中 · フィードバックをもとに改善中</p>
   </div>
 </section>
 
@@ -815,9 +881,10 @@ img{max-width:100%;height:auto}
     <a href="#solution">機能</a>
     <a href="#shots">スクショ</a>
     <a href="#philosophy">コンセプト</a>
-    <a href="https://x.com/strive_dev_sho" target="_blank">X: @strive_dev_sho</a>
+    <a href="https://apps.apple.com/jp/app/strive/id6770878590" target="_blank" rel="noopener">App Store</a>
+    <a href="https://x.com/strive_dev_sho" target="_blank" rel="noopener">X: @strive_dev_sho</a>
   </div>
-  <p>© 2025 Strive. 28卒エンジニアが爆速開発中。</p>
+  <p>© 2026 Strive. 前回重量を忘れない筋トレ記録アプリ。</p>
 </footer>
 
 <script>
