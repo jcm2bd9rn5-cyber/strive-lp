@@ -1,1 +1,52 @@
-<!-- Premium Landing Page README -->\n<div align=\"center\">\n\n# 🎯 Strive LP\n\n**Strive - Workout Tracking App のプレミアムランディングページ**\n\n筋トレ記録と継続支援に特化した iOS アプリ「Strive」のランディングページです。\n\n[![Live Site](https://img.shields.io/badge/Live%20Site-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://strive-lp-xi.vercel.app)\n[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jcm2bd9rn5-cyber/strive-lp)\n\n</div>\n\n---\n\n## 🎯 概要\n\nStrive は以下の特徴を持つ筋トレ記録アプリです：\n\n| 機能 | 説明 |\n|------|------|\n| 🏋️ **素早い記録** | トレーニング中でもサクサク記録できる UI |\n| 📊 **進捗管理** | 前回の重量・回数、PR、月間レポート |\n| 👥 **ソーシャル機能** | フレンド機能、ランキング |\n| 🎫 **サブスクリプション** | プレミアム機能で完全体験 |\n| ⏱️ **インターバルタイマー** | 効率的なトレーニング支援 |\n\n---\n\n## 📱 Quick Links\n\n- **[🌐 Live Demo](https://strive-lp-xi.vercel.app)** - ランディングページを今すぐ見る\n- **[📱 App Store](https://apps.apple.com/)** - Strive をダウンロード\n- **[⚖️ Legal](https://github.com/jcm2bd9rn5-cyber/strive-legal)** - プライバシーポリシー\n- **[👨‍💻 Portfolio](https://github.com/jcm2bd9rn5-cyber)** - 開発者ポートフォリオ\n\n---\n\n## 🌐 サイト構成\n\n```\nHome\n├── 📱 Hero Section - アプリの概要\n├── ✨ Features - 主要機能の紹介\n├── 🎬 UI Showcase - ビジュアルデモ\n├── 📝 App Store Links\n└── ⚖️ Legal / Terms\n```\n\n---\n\n## 💻 Tech Stack\n\n<div>\n\n![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)\n![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)\n![Responsive Design](https://img.shields.io/badge/Responsive-Design-4A90E2?style=flat-square&logo=responsive&logoColor=white)\n![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)\n\n</div>\n\n---\n\n## 🚀 デプロイ\n\nこのプロジェクトは **Vercel** で自動デプロイされています。\n\n```bash\n# クローン\ngit clone https://github.com/jcm2bd9rn5-cyber/strive-lp.git\ncd strive-lp\n\n# ローカルで実行（簡単な HTTP サーバー）\npython -m http.server 8000\n# または\nnpx http-server\n```\n\n---\n\n## 📊 Performance\n\n- ⚡ **Lightweight** - シンプルな HTML/CSS で高速読み込み\n- 📱 **Responsive** - すべてのデバイスに対応\n- 🎨 **Modern Design** - クリーンで魅力的なUI\n- ♿ **Accessible** - アクセシビリティ対応\n\n---\n\n## 📈 Related Projects\n\n| Project | Description | Link |\n|---------|-------------|------|\n| **Strive App** | メインの筋トレ記録アプリ | [Private Repo](https://github.com/jcm2bd9rn5-cyber/strive-ios) |\n| **Strive Legal** | プライバシーポリシー・利用規約 | [View](https://github.com/jcm2bd9rn5-cyber/strive-legal) |\n| **Portfolio** | 開発者ポートフォリオ | [View](https://github.com/jcm2bd9rn5-cyber) |\n\n---\n\n## 📝 ライセンス\n\nMIT License © 2026 Shogo Taguchi\n\n---\n\n<div align=\"center\">\n\n### 🎯 **Strive - 継続は力なり**\n\n[🌐 Visit Site](https://strive-lp-xi.vercel.app) | [📱 Download App](https://apps.apple.com/) | [👨‍💻 Contact](mailto:jcm2bd9rn5@privaterelay.appleid.com)\n\n</div>\n"
+<!-- Premium Landing Page README -->
+
+<div align="center">
+
+# Strive LP
+
+**Strive - Workout Tracking App Landing Page**
+
+筋トレ記録と継続支援に特化した iOS アプリ「Strive」のランディングページです。
+
+[![Live Site](https://img.shields.io/badge/Live%20Site-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://strive-lp-xi.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jcm2bd9rn5-cyber/strive-lp)
+
+</div>
+
+---
+
+## Overview
+
+Strive は、筋トレ記録と継続支援に特化した iOS アプリです。  
+このリポジトリでは、Strive の特徴やダウンロード導線を伝えるためのランディングページを管理しています。
+
+| Feature | Description |
+|---|---|
+| Quick Recording | トレーニング中でも素早く記録できる UI |
+| Progress Tracking | 前回重量・回数、PR、月間レポート |
+| Social Features | フレンド機能、ランキング |
+| Subscription | Pro機能への導線 |
+| Interval Timer | 効率的なトレーニングを支援 |
+
+---
+
+## Quick Links
+
+| Link | URL |
+|---|---|
+| Live Site | https://strive-lp-xi.vercel.app |
+| Strive App | App Store URL を設定予定 |
+| Legal | https://github.com/jcm2bd9rn5-cyber/strive-legal |
+| Developer Profile | https://github.com/jcm2bd9rn5-cyber |
+
+---
+
+## Site Structure
+
+```txt
+Home
+├── Hero Section
+├── Features
+├── UI Showcase
+├── App Store Links
+└── Legal / Terms
