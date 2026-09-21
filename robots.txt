@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://strive-lp-xi.vercel.app/sitemap.xml
