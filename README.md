@@ -1,36 +1,22 @@
-# Strive — Product Website
+# Strive — Slide-faithful Premium LP
 
-筋トレ記録アプリStriveの公式ランディングページ。実際の画面と開発背景を伝え、App Storeへつなぐ静的Webサイトです。
+技育展2026のシネマティックなデザインを参考にした、筋トレ記録アプリStriveの静的LP。
 
-[公式サイト](https://strive-lp-xi.vercel.app/) · [App Store](https://apps.apple.com/jp/app/strive/id6770878590) · [開発者](https://github.com/jcm2bd9rn5-cyber)
+- **本物のアプリスクリーンショット**: `assets/home.webp`, `assets/record.webp`, `assets/analytics.webp`, `assets/battle.webp` は技育展制作時に共有された画像をWebPに最適化したものです。
+- **背景画像**: 完成版スライドからの背景と、画像生成したジムの写真素材の一部を背景専用に使用。生成された偽のアプリUIは使っていません。
+- **デザイン**: ハイコントラストの黒×深紅、レイヤードiPhone、エディトリアルな文字設計、余白、統一したスクロールモーション。
+- **静的サイト**: `index.html`, `style.css`, `main.js` のみ。npmインストール不要。
+- **ユーザビリティ**: キーボード操作、`prefers-reduced-motion`対応、320〜1440pxのブラウザ検証済み。
+- **公開**: 本番のmainは未変更。Draft PRからPreviewをご確認ください。
 
-![Striveの紹介画像](assets/ogp.jpg)
+## ローカル確認
 
-## 実装
-
-- HTML / CSS / JavaScript。ビルド工程・npm依存なし。
-- 実画面を使ったスマートフォン表示と、狭い画面向けの横スクロール。
-- キーボード操作、動きを抑える設定、画像の代替テキストへの配慮。
-- メタ情報・OGP・サイトマップ、App Storeと問い合わせへの導線。
-
-## ローカルで見る
-
-```sh
-git clone https://github.com/jcm2bd9rn5-cyber/strive-lp.git
-cd strive-lp
+```bash
 python3 -m http.server 4173
 ```
-[http://localhost:4173/](http://localhost:4173/) を開きます。
 
-## 構成
+`http://localhost:4173/` をブラウザで開くか、直接 `index.html` を開きます。
 
-| ファイル | 役割 |
-| --- | --- |
-| [index.html](index.html) | ページ本文・メタ情報・各リンク |
-| [css/style.css](css/style.css) | 全体のレイアウトとレスポンシブ表示 |
-| [css/hero.css](css/hero.css) | ヒーロー・端末フレーム・ストアプレビュー |
-| [js/main.js](js/main.js) | スクロール時の表示演出 |
-| [assets/](assets/) | アイコン・実画面・公開ストア画像 |
-| [vercel.json](vercel.json) | Vercel設定 |
+## リンク
 
-[起動・確認手順](QUICKSTART.md) · [編集ガイド](CONTRIBUTING.md) · [保守メモ](ROADMAP.md) · [画像・掲載情報の記録](docs/content-notes.md)
+[App Store](https://apps.apple.com/jp/app/strive/id6770878590) · [プライバシーポリシー](https://jcm2bd9rn5-cyber.github.io/strive-legal/)
