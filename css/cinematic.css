@@ -84,7 +84,7 @@ em { color: #ff354e; }
 }
 .status-dot { width: 7px; height: 7px; background: #ff354e; box-shadow: 0 0 15px rgba(255,39,67,.85); }
 .hero h1 {
-  font-size: clamp(43px,5vw,76px);
+  font-size: clamp(42px,4.45vw,66px);
   letter-spacing: -.085em;
   line-height: 1.34;
   font-weight: 950;
