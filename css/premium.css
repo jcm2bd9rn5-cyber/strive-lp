@@ -305,3 +305,18 @@ em{font-style:normal;color:var(--red-bright)}
  .js [data-reveal]{opacity:1;transform:none}
  .phone--showcase,.phone--battle{transform:none}
 }
+/* A real gym silhouette, visually integrated behind the supplied app captures.
+   Kept subdued so typography and the interface remain dominant. */
+.hero__atmosphere{
+ background-image:
+ linear-gradient(90deg,rgba(7,8,12,.96) 0%,rgba(8,9,12,.94) 26%,rgba(8,8,11,.60) 60%,rgba(7,7,10,.74) 100%),
+ url("../assets/gym-shadow.svg");
+ background-size:cover,cover;
+ background-position:center,center;
+}
+@media(max-width:850px){
+ .hero__atmosphere{
+  background-image:linear-gradient(180deg,rgba(7,8,11,.95) 0%,rgba(7,7,11,.78) 46%,rgba(9,7,10,.58) 75%,rgba(7,8,11,.92) 100%),url("../assets/gym-shadow.svg");
+  background-position:center,right center;
+ }
+}
