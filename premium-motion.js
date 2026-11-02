@@ -101,7 +101,7 @@
     const mobile = window.matchMedia('(max-width: 760px)').matches;
     const offset = mobile ? visualFrame.getBoundingClientRect().height + 77 : Math.min(innerHeight * .1, 95);
     const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
-    window.scrollTo({ top, behavior: hasMotion() ? 'smooth' : 'instant' });
+    window.scrollTo({ top, behavior: hasMotion() ? 'smooth' : 'auto' });
   }));
 
   let scrollFrame = 0;

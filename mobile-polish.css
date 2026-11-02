@@ -1,0 +1,154 @@
+/* Strive Mobile Refinement — additive overrides for the adopted Motion LP.
+   Preserve the desktop art direction; prioritize touch, legibility and a stable
+   scroll-pinned product narrative on small screens. */
+@media (max-width: 760px) {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 74px; }
+  body { overscroll-behavior-x: none; }
+  .header {
+    padding-left: max(18px, env(safe-area-inset-left));
+    padding-right: max(18px, env(safe-area-inset-right));
+    gap: 10px;
+  }
+  .header .logo {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-inline: 3px;
+  }
+  .header__download {
+    min-height: 44px;
+    min-width: 124px;
+    justify-content: center;
+    padding: 11px 13px;
+    gap: 12px;
+    letter-spacing: .095em;
+  }
+  .container {
+    width: calc(100% - 40px);
+    max-width: 660px;
+  }
+  .hero__content { gap: 0; }
+  .hero__text { min-width: 0; }
+  .hero__description { max-width: 36ch; }
+  .hero__actions .button { max-width: 370px; }
+  .hero__phones-caption { left: 2%; right: 2%; }
+  .orbit { aspect-ratio: 1 / 1; height: auto; width: min(400px, 100%); }
+  .orbit__middle { min-width: 0; }
+  .orbit__item strong { line-height: 1.25; }
+  .journey__layout { width: calc(100% - 40px); }
+  .journey__visual-frame {
+    top: 67px;
+    height: clamp(345px, 49svh, 440px);
+    max-height: min(440px, calc(100svh - 98px));
+    padding-top: 8px;
+    isolation: isolate;
+  }
+  .journey__scene { min-height: 0; }
+  .journey-phone {
+    top: 4%;
+    width: clamp(132px, 41%, 190px);
+    max-width: 190px;
+    transition-duration: .52s;
+  }
+  .journey-phone--home {
+    top: 12%;
+    width: clamp(116px, 35%, 165px);
+    max-width: 165px;
+  }
+  .journey__scene-foot { bottom: 3px; }
+  .journey__control { padding: 0 0 2px; }
+  .journey__dot {
+    min-height: 46px;
+    min-width: 0;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 5px;
+    touch-action: manipulation;
+    font-size: 10px;
+    letter-spacing: .04em;
+  }
+  .journey__dot span { font-size: 10px; }
+  .journey__dot.is-current {
+    background: linear-gradient(180deg, rgba(230,42,72,.12), transparent);
+  }
+  .journey__step {
+    min-height: max(470px, 68svh);
+    scroll-margin-top: min(520px, calc(49svh + 97px));
+  }
+  .journey__step-inner { padding-left: 20px; padding-right: 1px; }
+  .journey__step h3 { overflow-wrap: anywhere; }
+  .journey__step .body-copy { font-size: 13px; line-height: 1.95; }
+  .journey__notes span { font-size: 11px; }
+  .journey__modes div { min-width: 0; flex: 1 1 125px; }
+  .js .journey__step:not(.is-current) { opacity: .83; }
+  .journey__endnote { flex-wrap: wrap; justify-content: center; row-gap: 12px; }
+  .footer__bottom nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0 12px;
+  }
+  .footer__bottom nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 5px;
+    font-size: 12px;
+    letter-spacing: .01em;
+    text-wrap: nowrap;
+  }
+  .footer__top .logo { min-height: 44px; padding-block: 7px; }
+  .footer__bottom { padding-bottom: max(0px, env(safe-area-inset-bottom)); }
+  .button, .text-action { touch-action: manipulation; }
+}
+@media (max-width: 390px) {
+  .hero__headline { font-size: clamp(27px, 7.55vw, 31px); }
+  .hero__brand { font-size: clamp(76px, 19.5vw, 87px); }
+  .journey__visual-frame {
+    height: clamp(335px, 50svh, 400px);
+    max-height: calc(100svh - 98px);
+  }
+  .journey__step { min-height: max(510px, 72svh); scroll-margin-top: 450px; }
+  .journey__dot { font-size: 9px; gap: 4px; }
+  .journey__step h3 { font-size: clamp(30px, 8vw, 34px); }
+  .orbit__small { font-size: 7px; }
+  .orbit__item strong { font-size: 11px; }
+}
+@media (max-width: 350px) {
+  .container, .journey__layout { width: calc(100% - 32px); }
+  .hero__headline { font-size: 27px; }
+  .hero__brand { font-size: 76px; }
+  .hero__note { flex-wrap: wrap; }
+  .journey__dot { letter-spacing: 0; font-size: 9px; }
+  .journey__dot span { font-size: 9px; }
+  .journey__step .body-copy { font-size: 12px; }
+  .journey__modes div { flex-basis: 110px; }
+}
+@media (max-width: 760px) and (max-height: 610px) {
+  /* Landscape phones / short displays: keep text reachable below the sticky art. */
+  .journey__visual-frame { height: min(305px, 49svh); top: 63px; }
+  .journey__step { min-height: 470px; scroll-margin-top: 340px; }
+  .journey-phone { width: clamp(110px, 30%, 156px); }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  .hero__photo, .hero__phones, .hero__text, .journey-phone {
+    animation: none !important;
+    transition: none !important;
+    will-change: auto;
+  }
+  .identity-strip__track { animation: none !important; }
+  .journey__step, .js .journey__step:not(.is-current) { opacity: 1; }
+}
+@media (min-width: 761px) and (max-width: 960px) {
+  /* Tablet is touch-first too, despite the two-column presentation. */
+  .header .logo { min-height: 44px; }
+  .header__download { min-height: 44px; }
+  .footer__bottom nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 6px 4px;
+  }
+  .footer__top .logo { min-height: 44px; }
+  .journey__dot { min-height: 48px; }
+}
