@@ -1,0 +1,131 @@
+/* Strive — dual-store release.
+   Preserve the existing cinematic design and scroll narrative. */
+.store-links {
+  width: min(100%, 465px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 12px;
+}
+.store-link {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 77px;
+  padding: 15px 13px;
+  overflow: hidden;
+  color: #faf6f8;
+  border: 1px solid rgba(255,255,255,.22);
+  background: linear-gradient(145deg,rgba(40,31,39,.92),rgba(14,13,19,.96));
+  box-shadow: 0 18px 39px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.065);
+  text-decoration: none;
+  transition: border-color .28s ease, transform .28s cubic-bezier(.2,.75,.3,1), box-shadow .28s ease, background .28s ease;
+}
+.store-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 0% 100%,rgba(244,48,76,.14),transparent 80%);
+  opacity: .85;
+}
+.store-link--ios {
+  border-color: rgba(252,89,110,.44);
+  background: linear-gradient(135deg,rgba(112,19,40,.89),rgba(30,12,20,.98));
+}
+.store-link--android {
+  background: linear-gradient(135deg,rgba(31,29,38,.96),rgba(13,12,19,.97));
+}
+.store-link:hover {
+  border-color: rgba(255,111,129,.81);
+  transform: translateY(-3px);
+  box-shadow:0 21px 43px rgba(0,0,0,.32),0 0 26px rgba(208,27,57,.11);
+}
+.store-link:active {transform:translateY(-1px)}
+.store-link__icon {
+  display: inline-grid;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #fff5f7;
+}
+.store-link__icon svg{width:24px;height:24px;display:block}
+.store-link__text {min-width:0;flex:1;display:flex;flex-direction:column;gap:5px;align-items:flex-start}
+.store-link__eyebrow {
+  color: #c9adb6;
+  font: 750 9px/1.1 Arial,sans-serif;
+  letter-spacing: .13em;
+  white-space: nowrap;
+}
+.store-link__text strong{
+  color:#fff;
+  font: 800 clamp(14px,1.28vw,18px)/1.15 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  letter-spacing:-.025em;
+  white-space:nowrap;
+}
+.store-link__arrow{
+  align-self:flex-start;
+  margin-left:auto;
+  font: 400 19px/1 Arial,sans-serif;
+  color:#fa6c81;
+}
+.hero__actions .store-links {flex: 0 1 465px;}
+.hero__actions .text-action {flex: 0 0 auto;}
+.hero__note{flex-wrap:wrap;}
+.download__content .store-links{
+  margin-top:42px;
+  width:min(100%,490px);
+  text-align:left;
+}
+.download__content .store-link {min-height:83px;}
+.download__content small{line-height:1.65;text-align:center;}
+@media(max-width:1100px){
+ .hero__actions .store-links{flex-basis:100%;}
+ .hero__actions .text-action{flex-basis:100%;}
+}
+@media(max-width:760px){
+ .store-link{min-height:74px;}
+ .store-link__arrow{display:none}
+ .hero__actions .store-links{width:min(100%,470px);}
+ .hero__note{gap:7px 9px;}
+ .download__content .store-links{margin-top:33px;}
+ .download__content .store-link{min-height:74px;}
+}
+@media(max-width:600px){
+ .hero__actions{display:flex;flex-direction:column;align-items:flex-start;gap:0;}
+ .hero__actions .store-links{flex-basis:auto;}
+ .hero__actions .text-action{flex-basis:auto;margin-top:12px;}
+ .store-links{width:100%;gap:10px}
+ .store-link{
+  gap:8px;
+  min-height:70px;
+  padding:12px 10px;
+ }
+ .store-link__icon{
+  flex-basis:31px;
+  width:31px;
+  height:34px;
+ }
+ .store-link__icon svg{width:22px;height:22px;}
+ .store-link__eyebrow{font-size:8px;letter-spacing:.09em;}
+ .store-link__text strong{font-size:15px;letter-spacing:-.035em;}
+ .download__content .store-link{min-height:70px;}
+ .download__content small{max-width:290px;line-height:1.8;}
+}
+@media(max-width:350px){
+ .store-links{grid-template-columns:1fr;width:min(100%,310px);gap:9px;}
+ .store-link{min-height:62px;padding:9px 13px;gap:13px;}
+ .store-link__icon{width:36px;height:36px;flex-basis:36px;}
+ .store-link__text strong{font-size:16px;}
+ .download__content .store-link{min-height:62px;}
+}
+@media(prefers-reduced-motion:reduce){
+ .store-link{transition:none!important}
+ .store-link:hover,.store-link:active{transform:none}
+}
