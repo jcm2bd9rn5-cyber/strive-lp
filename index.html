@@ -17,9 +17,13 @@
   <meta name="apple-itunes-app" content="app-id=6770878590">
   <title>Strive — 負けたくない。だから、また行く。</title>
   <link rel="preload" as="image" href="assets/record.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&amp;family=Noto+Sans+JP:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="premium-motion.css">
   <link rel="stylesheet" href="mobile-polish.css">
   <link rel="stylesheet" href="store-links.css">
+  <link rel="stylesheet" href="typography.css">
   
 </head>
 <body>
@@ -49,19 +53,11 @@
           <p class="hero__description">記録する。比べる。悔しくなる。<br>その気持ちが、次のトレーニングへ向かう力になる。</p>
           <div class="hero__actions">
             <div class="store-links store-links--hero" role="group" aria-label="Striveのダウンロード先">
-              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="iPhone用StriveをApp Storeで入手">
-                <span class="store-link__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="1.8" width="12" height="20.4" rx="2.8" stroke="currentColor" stroke-width="1.65"/><path d="M10.5 18.8h3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/></svg>
-                </span>
-                <span class="store-link__text"><span class="store-link__eyebrow">FOR IPHONE</span><strong>App Store</strong></span>
-                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="App StoreでStriveをダウンロード">
+                <img class="store-badge store-badge--apple" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="180" height="53" alt="Download on the App Store" loading="eager" decoding="async">
               </a>
-              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Android用StriveをGoogle Playで入手">
-                <span class="store-link__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5.1 2.8v18.4c0 .55.61.88 1.06.57l13.4-8.68c.68-.44.68-1.42 0-1.86L6.16 2.23c-.45-.3-1.06.03-1.06.57Z" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/><path d="m5.8 3.2 9.3 9-9.3 8.6" stroke="currentColor" stroke-opacity=".48" stroke-width="1.25" stroke-linejoin="round"/></svg>
-                </span>
-                <span class="store-link__text"><span class="store-link__eyebrow">FOR ANDROID</span><strong>Google Play</strong></span>
-                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Google PlayでStriveをダウンロード">
+                <img class="store-badge store-badge--google" src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" width="180" height="62" alt="Google Playで手に入れよう" loading="eager" decoding="async">
               </a>
             </div>
             <a class="text-action" href="#philosophy">DISCOVER STRIVE <span aria-hidden="true">↓</span></a>
@@ -185,19 +181,11 @@
         <h2 id="download-title">負けたくない。<br><em>だから、また行く。</em></h2>
         <p class="download__tagline">悔しさを、強さに変えろ。</p>
         <div class="store-links store-links--final" role="group" aria-label="Striveのダウンロード先">
-              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="iPhone用StriveをApp Storeで入手">
-                <span class="store-link__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="1.8" width="12" height="20.4" rx="2.8" stroke="currentColor" stroke-width="1.65"/><path d="M10.5 18.8h3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/></svg>
-                </span>
-                <span class="store-link__text"><span class="store-link__eyebrow">FOR IPHONE</span><strong>App Store</strong></span>
-                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="App StoreでStriveをダウンロード">
+                <img class="store-badge store-badge--apple" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="180" height="53" alt="Download on the App Store" loading="lazy" decoding="async">
               </a>
-              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Android用StriveをGoogle Playで入手">
-                <span class="store-link__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5.1 2.8v18.4c0 .55.61.88 1.06.57l13.4-8.68c.68-.44.68-1.42 0-1.86L6.16 2.23c-.45-.3-1.06.03-1.06.57Z" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/><path d="m5.8 3.2 9.3 9-9.3 8.6" stroke="currentColor" stroke-opacity=".48" stroke-width="1.25" stroke-linejoin="round"/></svg>
-                </span>
-                <span class="store-link__text"><span class="store-link__eyebrow">FOR ANDROID</span><strong>Google Play</strong></span>
-                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Google PlayでStriveをダウンロード">
+                <img class="store-badge store-badge--google" src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" width="180" height="62" alt="Google Playで手に入れよう" loading="lazy" decoding="async">
               </a>
             </div>
         <small>iOS &amp; ANDROID / APP STORE &amp; GOOGLE PLAY</small>
@@ -218,6 +206,7 @@
       </nav>
       <span>© 2026 STRIVE</span>
     </div>
+    <p class="store-trademarks container">Apple、Appleのロゴ、App Storeは、米国およびその他の国で登録されたApple Inc.の商標です。Google PlayおよびGoogle PlayのロゴはGoogle LLCの商標です。</p>
   </footer>
 <script src="premium-motion.js" defer></script>
 </body>
