@@ -1,0 +1,193 @@
+/* STRIVE / editorial type system
+   Barlow Condensed: expressive STRIVE lettering and large numeric motifs.
+   Space Grotesk: navigation, technical labels and overlines.
+   Noto Sans JP: disciplined and readable Japanese display/body text.
+   Web fonts are optional; platform fallbacks keep the site usable offline. */
+:root{
+  --font:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --latin:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --font-label:"Space Grotesk",Arial,sans-serif;
+  --font-jp:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --font-display:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:var(--font-jp);font-weight:450;letter-spacing:.008em;font-kerning:normal}
+.logo{
+  font:italic 900 30px/.9 var(--font-display);
+  letter-spacing:-.017em;
+  font-synthesis:none;
+  gap:9px;
+}
+.logo__slash{width:19px;height:27px}
+.header__nav a,.header__download{
+  font-family:var(--font-label);
+  font-weight:700;
+  letter-spacing:.15em;
+  font-size:10px;
+}
+.header__download{font-size:11px}
+.micro,.chapter-label,
+.hero__note,.hero__phones-caption,.hero__bottom,
+.philosophy__footnote,.image-credit,
+.journey__scene-foot,.journey__eyebrow,
+.journey__dot,.journey__modes small,
+.battle__sideword,.analyze__caption,
+.download small,.footer__bottom,
+.orbit__small,.orbit__item>span,.orbit__item small,
+.journey__endnote,.text-action,
+.journey__notes{
+  font-family:var(--font-label);
+  font-weight:600;
+  letter-spacing:.115em;
+}
+.micro,.chapter-label{font-size:11px;letter-spacing:.20em}
+.hero__brand{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:900;
+  font-synthesis:none;
+  font-size:clamp(106px,10.5vw,184px);
+  line-height:.85;
+  letter-spacing:-.035em;
+  margin-block:34px 29px;
+  white-space:nowrap;
+}
+.hero__brand>span:first-child{letter-spacing:-.07em}
+.hero__headline,
+.chapter-title,.journey__step h3,
+.mission h2,.download h2{
+  font-family:var(--font-jp);
+  font-weight:900;
+  font-synthesis:none;
+  letter-spacing:-.055em;
+  font-feature-settings:"palt";
+  text-wrap:pretty;
+}
+.hero__headline{
+  font-size:clamp(33px,3.65vw,56px);
+  line-height:1.44;
+  white-space:nowrap;
+}
+.chapter-title{
+  font-size:clamp(41px,4.65vw,76px);
+  line-height:1.38;
+}
+.journey__step h3{
+  font-size:clamp(37px,4.2vw,62px);
+  line-height:1.41;
+}
+.mission h2{
+  font-size:clamp(42px,5.8vw,91px);
+  line-height:1.42;
+}
+.download h2{
+  font-size:clamp(39px,6.7vw,100px);
+  line-height:1.42;
+}
+.lead,.journey__lead{
+  font-family:var(--font-jp);
+  font-weight:750;
+  letter-spacing:-.025em;
+  line-height:1.77;
+}
+.hero__description,.body-copy,.journey__step .body-copy,
+.mission p:last-child,.journey__notes span,.download__tagline{
+  font-family:var(--font-jp);
+  font-weight:480;
+  letter-spacing:.014em;
+  line-height:2.02;
+}
+.hero__description{font-size:clamp(13px,1.1vw,15px);line-height:2.1}
+.journey__step .body-copy{font-size:14px}
+.identity-strip span,
+.identity-strip__track span{
+  font-family:var(--font-display);
+  font-weight:800;
+  letter-spacing:.12em;
+}
+.identity-strip__track span{
+  font-size:clamp(15px,1.9vw,24px);
+  line-height:1.2;
+}
+.chapter-subhead,.analyze__marker,
+.download__background::before,.journey__outline{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:900;
+  letter-spacing:-.055em;
+}
+.orbit__middle strong{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:900;
+  letter-spacing:-.02em;
+}
+.orbit__item strong,.journey__modes strong,
+.battle__modes strong{
+  font-family:var(--font-jp);
+  font-weight:800;
+  letter-spacing:-.035em;
+}
+.download__brand{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:900;
+  font-size:31px;
+  letter-spacing:.045em;
+  line-height:1;
+}
+.text-action{font-size:11px;letter-spacing:.14em}
+.footer__top p{font-family:var(--font-jp);font-weight:500}
+.journey__step-number{font-family:var(--font-label);font-weight:700}
+.store-trademarks{
+  font-family:var(--font-jp);
+  font-size:10px;
+  letter-spacing:0;
+  font-weight:400;
+  line-height:1.9;
+}
+@media(max-width:1100px){
+  .hero__brand{font-size:clamp(90px,10vw,140px)}
+}
+@media(max-width:760px){
+  .logo{font-size:26px}
+  .hero__brand{
+    font-size:clamp(84px,19vw,120px);
+    margin:26px 0 21px;
+    letter-spacing:-.037em;
+  }
+  .hero__headline{font-size:clamp(31px,7.5vw,46px);letter-spacing:-.058em}
+  .chapter-title{font-size:clamp(35px,8.5vw,50px)}
+  .journey__step h3{font-size:clamp(33px,8.2vw,45px)}
+  .hero__description,.body-copy{line-height:2.04}
+  .micro,.chapter-label{font-size:10px}
+  .journey__notes span{font-size:10px}
+}
+@media(max-width:600px){
+  .logo{font-size:25px}
+  .hero__brand{font-size:clamp(81px,19.5vw,117px);line-height:.88}
+  .hero__headline{font-size:clamp(30px,7.6vw,45px)}
+  .hero__description{font-size:12.5px;line-height:2.08}
+  .chapter-title{font-size:clamp(34px,8.3vw,49px)}
+  .mission h2{font-size:clamp(38px,8.8vw,58px);line-height:1.43}
+  .download h2{font-size:clamp(32px,8vw,53px)}
+  .identity-strip__track span{font-size:clamp(12px,3.6vw,17px)}
+  .journey__step h3{font-size:clamp(32px,8.25vw,43px)}
+}
+@media(max-width:390px){
+  .hero__brand{font-size:clamp(79px,19.6vw,87px)}
+  .hero__headline{font-size:clamp(28px,7.25vw,32px)}
+  .chapter-title{font-size:clamp(32px,8.1vw,36px)}
+  .journey__step h3{font-size:clamp(29px,8vw,34px)}
+}
+@media(max-width:350px){
+  .logo{font-size:23px}
+  .hero__brand{font-size:76px}
+  .hero__headline{font-size:27px}
+  .chapter-title{font-size:31px}
+  .download h2{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  /* New fonts never introduce additional motion. */
+  .hero__brand,.chapter-title,.journey__step h3{animation:none!important}
+}
