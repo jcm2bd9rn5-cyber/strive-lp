@@ -19,6 +19,7 @@
   <link rel="preload" as="image" href="assets/record.webp" fetchpriority="high">
   <link rel="stylesheet" href="premium-motion.css">
   <link rel="stylesheet" href="mobile-polish.css">
+  <link rel="stylesheet" href="store-links.css">
   
 </head>
 <body>
@@ -32,7 +33,7 @@
       <a href="#experience">EXPERIENCE</a>
       <a href="#battle">BATTLE</a>
     </nav>
-    <a class="header__download" href="https://apps.apple.com/jp/app/strive/id6770878590">GET THE APP <span aria-hidden="true">↗</span></a>
+    <a class="header__download" href="#download" aria-label="ダウンロード先を選択">GET THE APP <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
@@ -47,10 +48,25 @@
           <h1 id="hero-heading" class="hero__headline">負けたくない。<br><em>だから、また行く。</em></h1>
           <p class="hero__description">記録する。比べる。悔しくなる。<br>その気持ちが、次のトレーニングへ向かう力になる。</p>
           <div class="hero__actions">
-            <a class="button button--red" href="https://apps.apple.com/jp/app/strive/id6770878590"><span>App Storeで入手</span><span aria-hidden="true">↗</span></a>
+            <div class="store-links store-links--hero" role="group" aria-label="Striveのダウンロード先">
+              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="iPhone用StriveをApp Storeで入手">
+                <span class="store-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="1.8" width="12" height="20.4" rx="2.8" stroke="currentColor" stroke-width="1.65"/><path d="M10.5 18.8h3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/></svg>
+                </span>
+                <span class="store-link__text"><span class="store-link__eyebrow">FOR IPHONE</span><strong>App Store</strong></span>
+                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Android用StriveをGoogle Playで入手">
+                <span class="store-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M5.1 2.8v18.4c0 .55.61.88 1.06.57l13.4-8.68c.68-.44.68-1.42 0-1.86L6.16 2.23c-.45-.3-1.06.03-1.06.57Z" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/><path d="m5.8 3.2 9.3 9-9.3 8.6" stroke="currentColor" stroke-opacity=".48" stroke-width="1.25" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="store-link__text"><span class="store-link__eyebrow">FOR ANDROID</span><strong>Google Play</strong></span>
+                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
             <a class="text-action" href="#philosophy">DISCOVER STRIVE <span aria-hidden="true">↓</span></a>
           </div>
-          <p class="hero__note"><span class="live-dot" aria-hidden="true"></span> AVAILABLE ON iOS <span class="slash-sep">/</span> MADE BY A LIFTER</p>
+          <p class="hero__note"><span class="live-dot" aria-hidden="true"></span> AVAILABLE ON iOS &amp; ANDROID <span class="slash-sep">/</span> MADE BY A LIFTER</p>
         </div>
         <div class="hero__phones" id="hero-stage" aria-label="Striveの実際のHOME・LOG・DATA画面">
           <div class="stage-ring stage-ring--first" aria-hidden="true"></div>
@@ -168,8 +184,23 @@
         <p class="micro">YOUR NEXT REP STARTS HERE.</p>
         <h2 id="download-title">負けたくない。<br><em>だから、また行く。</em></h2>
         <p class="download__tagline">悔しさを、強さに変えろ。</p>
-        <a class="button button--red button--download" href="https://apps.apple.com/jp/app/strive/id6770878590"><span>App Storeで入手</span><span aria-hidden="true">↗</span></a>
-        <small>iOS / APP STORE</small>
+        <div class="store-links store-links--final" role="group" aria-label="Striveのダウンロード先">
+              <a class="store-link store-link--ios" href="https://apps.apple.com/jp/app/strive/id6770878590" aria-label="iPhone用StriveをApp Storeで入手">
+                <span class="store-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="1.8" width="12" height="20.4" rx="2.8" stroke="currentColor" stroke-width="1.65"/><path d="M10.5 18.8h3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/></svg>
+                </span>
+                <span class="store-link__text"><span class="store-link__eyebrow">FOR IPHONE</span><strong>App Store</strong></span>
+                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="store-link store-link--android" href="https://play.google.com/store/apps/details?id=com.shogodev.strive" aria-label="Android用StriveをGoogle Playで入手">
+                <span class="store-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M5.1 2.8v18.4c0 .55.61.88 1.06.57l13.4-8.68c.68-.44.68-1.42 0-1.86L6.16 2.23c-.45-.3-1.06.03-1.06.57Z" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/><path d="m5.8 3.2 9.3 9-9.3 8.6" stroke="currentColor" stroke-opacity=".48" stroke-width="1.25" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="store-link__text"><span class="store-link__eyebrow">FOR ANDROID</span><strong>Google Play</strong></span>
+                <span class="store-link__arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+        <small>iOS &amp; ANDROID / APP STORE &amp; GOOGLE PLAY</small>
       </div>
     </section>
   </main>
@@ -179,6 +210,7 @@
     <div class="container footer__bottom">
       <nav aria-label="フッターナビゲーション">
         <a href="https://apps.apple.com/jp/app/strive/id6770878590">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.shogodev.strive">Google Play</a>
         <a href="https://jcm2bd9rn5-cyber.github.io/strive-legal/">Privacy Policy</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Service</a>
         <a href="mailto:shougo.12345@outlook.jp">Support</a>
